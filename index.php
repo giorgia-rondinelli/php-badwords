@@ -1,3 +1,7 @@
+<?php
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +14,19 @@
   
 <div class="container">
 
-
-<div class="input-group mb-3">
-  <span class="input-group-text">With textarea</span>
-  <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>
-<div class=" ">
-  <label for="basic-url" class="form-label">Inserisci la parola da censurare</label>
-  <div><input type="text" class="form-control" placeholder="Username" aria-label="Username">
-  </div>
-  
-</div>
-
+  <form action="pagina-atterraggio.php" method="post">
+    <div class="input-group mb-3">
+      <span class="input-group-text">With textarea</span>
+      <textarea name="text" class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <div class=" ">
+      <label for="basic-url" class="form-label">Inserisci la parola da censurare</label>
+      <div><input name="word" type="text" class="form-control"  >
+      </div>
+      
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </div>  
 </body>
 </html>
